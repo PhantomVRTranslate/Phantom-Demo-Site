@@ -21,7 +21,7 @@
 		
 		<script>
 			function startVR() {
-
+				window.hideBody(); 
 				let mobile = false;
 				if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 					mobile = true;
@@ -33,6 +33,7 @@
 						mobile
 					}
 				);
+				document.querySelector('[title="Full Screen"]').click(); 
 			}
 		</script>
 	
@@ -53,6 +54,7 @@
 
 					<script>
 					function testScroll(ev){
+						
 						var body = document.body,
 							html = document.documentElement,
 							btmbtn = document.getElementsByClassName('modal-body')[0];
@@ -81,51 +83,57 @@
 				<!-- Main -->
 					<div id="main">
 						<article class="thumb">
-							<a  class="image"><img src="https://picsum.photos/200"  class="image-vr" alt="" /></a>
+								
+							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525044236/islands.jpg"  class="image-vr" alt="" /></a>
 							<h2>Magna feugiat lorem</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a  class="image"><img src="https://ctl.s6img.com/society6/img/zwHu2FqigAchXWwCuKsrvvj6Yo0/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/453304ed07e046bd90d59810f4e6c3fd/~~/spacesuit-corgi-cute-corgi-in-space-cosmic-corgi-prints.jpg" alt="" class="image-vr"/></a>
-							<h2>Nisl adipiscing</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a  class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
+							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525044237/stairs.jpg" class="image-vr" alt="" /></a>
 							<h2>Tempus aliquam veroeros</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a  class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
+							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525045254/fire.jpg" class="carousel-image-vr" alt="" /></a>
 							<h2>Aliquam ipsum sed dolore</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a  class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
+							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525044236/smoke.jpg" class="carousel-image-vr" alt="" /></a>
 							<h2>Cursis aliquam nisl</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a  class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
+							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525044236/road.jpg" class="carousel-image-vr" alt="" /></a>
 							<h2>Sed consequat phasellus</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a  class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
+							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525044236/nightsky.jpg" class="carousel-image-vr'" alt="" /></a>
 							<h2>Mauris id tellus arcu</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a  class="image"><img src="images/thumbs/08.jpg" alt="" /></a>
+							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525044237/rustmountain.jpg" class="carousel-image-vr" alt="" /></a>
 							<h2>Nunc vehicula id nulla</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a  class="image"><img src="images/thumbs/09.jpg" alt="" /></a>
+							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525043760/forest.jpg" class="carousel-image-vr" alt="" /></a>
 							<h2>Neque et faucibus viverra</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
+								<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525045712/purplevien.jpg" class="carousel-image-vr" alt="" /></a>
+								<h2>Neque et faucibus viverra</h2>
+								<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							</article>
+						<article class="thumb">
+								<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525045254/city.jpg" class="carousel-image-vr" alt="" /></a>
+								<h2>Neque et faucibus viverra</h2>
+								<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+							</article>
+						<!-- <article class="thumb">
 							<a  class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
 							<h2>Mattis ante fermentum</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
@@ -139,7 +147,7 @@
 							<a  class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
 							<h2>Vehicula id nulla dignissim</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
+						</article> -->
 					</div>
 
 				<!-- Footer -->
