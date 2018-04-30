@@ -16,9 +16,7 @@
 	</head>
 	<body>
 		<div style='position: absolute; z-index: 100000; height: 100vh; width: 100vw;' id="phantom"></div>
-		
 		<script src="https://rawgit.com/PhantomVRTranslate/PhantomScripts/master/client.bundle.js"></script>
-		
 		<script>
 			function startVR() {
 				window.hideBody(); 
@@ -36,7 +34,9 @@
 				document.querySelector('[title="Full Screen"]').click(); 
 			}
 		</script>
-	
+
+
+	<!-- <button onclick='startVR()'></button> -->
 			<div id="wrapper">
 
 				<!-- Header -->
@@ -58,16 +58,8 @@
 						var body = document.body,
 							html = document.documentElement,
 							btmbtn = document.getElementsByClassName('modal-body')[0];
-							console.warn('btmbtn', btmbtn); 
 						var height = (html.offsetHeight - html.clientHeight - 60); 
-							// console.warn('all max heights', body.scrollHeight, body.offsetHeight, 
-                       		// 					html.clientHeight, html.scrollHeight, html.offsetHeight ); 
-							console.log('mathmax height: ', height); 
 							if(window.pageYOffset>=(height)) {
-								console.log('HIT BTOTTM O PAGE');
-								console.log('pageYoffset', window.pageYOffset);
-								
-								// btmbtn.classList.remove('.modal-body');
 								btmbtn.classList.add('modal-body-fadein'); 
 							};
 						}
@@ -82,14 +74,14 @@
 						</div><!-- /.modal -->
 				<!-- Main -->
 					<div id="main">
+						
 						<article class="thumb">
-								
-							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525044236/islands.jpg"  class="image-vr" alt="" /></a>
+							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525044236/islands.jpg"  class="image-vr" image-flex="2" alt="" /></a>
 							<h2>Magna feugiat lorem</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
 						<article class="thumb">
-							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525044237/stairs.jpg" class="image-vr" alt="" /></a>
+							<a  class="image"><img src="http://res.cloudinary.com/mpompili/image/upload/v1525044237/stairs.jpg" class="image-vr" image-flex="2" alt="" /></a>
 							<h2>Tempus aliquam veroeros</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 						</article>
