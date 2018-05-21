@@ -1983,7 +1983,7 @@
 
 		}
 
-	.phantom-btn{
+	#phantom-btn{
 		border: 1px black solid;
 		background-image: url(https://raw.githubusercontent.com/Mpompili/VSImages/master/ghostOutline_bak.png);
 		background-size: 150%;
